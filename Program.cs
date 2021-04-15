@@ -1,30 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 // 2- Write a program which takes two numbers from the console and displays the maximum of the two.
 
-namespace UdemyCSharp_ControlFlow_Exercises1_Number2
+namespace Test
 {
+
     class Program
     {
         static void Main(string[] args)
+
         {
 
-            int numberOne = 40;
-            int numberTwo = 8;
+            var firstNumberString = Console.ReadLine();
+            int firstNumberInt = Convert.ToInt32(firstNumberString);
 
-            if (numberOne > numberTwo)
+            var secondNumberString = Console.ReadLine();
+            int secondNumberInt = Convert.ToInt32(secondNumberString);
+
+
+            // Now we do the logic
+
+            if (firstNumberInt > secondNumberInt)
             {
-                Console.WriteLine(numberOne);
+                Console.WriteLine(firstNumberInt);
             }
 
             else
             {
-                Console.WriteLine(numberTwo);
+                Console.WriteLine(secondNumberInt);
             }
         }
     }
